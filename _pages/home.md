@@ -11,7 +11,7 @@ permalink: /
 <span style="font-size: 14pt"> (Prakat Modi : प्रकट मोदी )</span><br>
 
 
-![profile](https://prakatmodi.github.io/images/Home_pic.jpg){:style="width: 650px; float: left; margin-left: 00px; margin-right: 20px; margin-bottom: 20px"}<br>
+![profile](/images/Home_pic.jpg){:style="width: 650px; float: left; margin-left: 00px; margin-right: 20px; margin-bottom: 20px"}<br>
 
 <p><img src="{{ site.url }}{{ site.baseurl }}/images/Home_pic.jpg" alt="profile" style="width: 650px; float: left; margin-left: 00px; margin-right: 20px; margin-bottom: 20px" /></p><br>
 
