@@ -6,6 +6,17 @@ sitemap: false
 permalink: /
 ---
 
+<<<<<<< HEAD
+=======
+<!-- ### Biography <span style="font-size: 1em"> Prakat Modi ( प्रकट मोदी )<br> -->
+<span style="font-size: 20pt; color:black"> Biography </span>
+<span style="font-size: 14pt"> (Prakat Modi : प्रकट मोदी )</span><br>
+
+
+<p style="text-align: justify">I am a Ph.D. candidate at the Department of Civil Engineering, <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo</a> and associated with the <a href="https://global-hydrodynamics.github.io/">Global Hydrodynamics Lab</a>. My research aims to understand and model global hydrology and large-scale river hydrodynamics to improve the representation of these systems for better prediction. My research will help to quantify the impact of anthropogenic activities and climate change on the natural system and will help build a sustainable society.
+<br /></p>
+
+>>>>>>> 72273bda057033a964890835db407342f42c4977
 ---
 
 <span style="font-size: 20pt; color:black"> Areas of interest </span>
