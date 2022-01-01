@@ -1,4 +1,4 @@
-- ID: 4
+- ID: 5
   title: "A Novel Approach for Evaluation of Hydrodynamic Model by Integrating Performance for Multiple Variables"
   image: 
   description: 
@@ -9,7 +9,7 @@
     doi: 
   highlight: 1
 
-- ID: 3
+- ID: 4
   title: "MERIT DEM Performs Better for Hydrodynamic Flood Model in Amazon Basin"
   image: 
   description: 
@@ -20,7 +20,7 @@
     doi: 
   highlight: 1
 
-- ID: 2
+- ID: 3
   title: "Urban Renewal in an existing Neighbourhood: Exploring the Impact of Land-use Modification in the Urban Character of the Old Neighbourhood of Kolkata"
   image: 
   description: 
@@ -32,7 +32,7 @@
   highlight: 1
 
 
-- ID: 1
+- ID: 2
   title: "Aerobic Biological Treatment of Pesticide Industry Effluent: A Kinetic Evaluation"
   image: 
   description: 
@@ -41,6 +41,17 @@
     url: https://doi.org/10.1061/9780784482025.001
     display: "ASCE INDIA CONFERENCE 2017 – URBANIZATION CHALLENGES IN EMERGING ECONOMIES Moving Towards Resilient Sustainable Cities and Infrastructure, 2017."
     doi: 10.1061/9780784482025.001
+  highlight: 1
+
+ID: 1
+  title: "Efficacy of Azimuthal Resistivity Sounding in Mapping Sub-Surface Electrical Anisotropy - A Case Study"
+  image: 
+  description: 
+  authors:  P. Modi, J. Lalwani, P. Istalkar, PKB V N
+  link:
+    url: 
+    display: "INGWC, 2016."
+    doi: 
   highlight: 1
 
 
