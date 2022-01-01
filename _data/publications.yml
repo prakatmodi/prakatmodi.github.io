@@ -1,0 +1,32 @@
+- ID: 3
+  title: "Distribution Matters: Sensitivity of Gridded Data of Population and Economic Conditions to Global Water Scarcity Assessment"
+  image: 
+  description: 
+  authors: P Modi, N Hanasaki, D Yamazaki, J Boulange, T Oki
+  link:
+    url: https://www.researchsquare.com/article/rs-1058859/v1
+    display: Communications earth & environemnt (under review) DOI
+    doi: 10.21203/rs.3.rs-1058859/v1
+  highlight: 1
+
+- ID: 2
+  title: "Correction of river bathymetry parameters using the stage–discharge rating curve"
+  image: 
+  description: 
+  authors: X Zhou, M Revel, P Modi, T Shiozawa, D Yamazaki 
+  link:
+    url: https://www.essoar.org/doi/10.1002/essoar.10508468.1
+    display: Water Resources Research (under review) DOI
+    doi: 10.1002/essoar.10508468.1
+  highlight: 1
+
+- ID: 1
+  title: "Multivariable Integrated Evaluation of Hydrodynamic Modeling: A Comparison of Performance considering different Baseline Topography Data"
+  image: 
+  description: 
+  authors: P Modi, M Revel, D Yamazaki, 
+  link:
+    url: https://www.essoar.org/doi/10.1002/essoar.10506596.1
+    display: Water Resources Research (under review) DOI
+    doi: 10.1002/essoar.10506596.1
+  highlight: 1
