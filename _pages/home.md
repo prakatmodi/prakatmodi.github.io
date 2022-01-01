@@ -13,6 +13,9 @@ permalink: /
 
 ![profile]({{ site.url }}{{ site.baseurl }}/images/Home_pic.jpg){:style="width: 650px; float: left; margin-left: 00px; margin-right: 20px; margin-bottom: 20px"}
 
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Home_pic.jpg" alt="profile" style="width: 650px; float: left; margin-left: 00px; margin-right: 20px; margin-bottom: 20px" /></p>
+
+
 <p style="text-align: justify">I am a Ph.D. candidate at the Department of Civil Engineering, <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo</a> and associated with the <a href="https://global-hydrodynamics.github.io/">Global Hydrodynamics Lab</a>. My research aims to understand and model global hydrology and large-scale river hydrodynamics to improve the representation of these systems for better prediction. My research will help to quantify the impact of anthropogenic activities and climate change on the natural system and will help build a sustainable society.
 <br /></p>
 
