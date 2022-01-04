@@ -32,7 +32,7 @@ permalink: /publications/
 
 ----
 
-### Book Chapters 
+### Book Chapters, etc. 
 
 {% for chap in site.data.bookchapters %}
 

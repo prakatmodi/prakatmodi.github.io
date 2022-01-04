@@ -1,4 +1,4 @@
-- ID: 1
+- ID: 2
   title: "Aerobic Biological Treatment of Pesticide Industry Effluent: A Kinetic Evaluation"
   image: 
   description: 
@@ -7,4 +7,15 @@
     url: https://doi.org/10.1061/9780784482025.001
     display: "Urbanization Challenges in Emerging Economies: Energy and Water Infrastructure; Transportation Infrastructure; and Planning and Financing, 1-10, 2018."
     doi: 10.1061/9780784482025.001
+  highlight: 1
+
+- ID: 1
+  title: "Pesticide Effluent Treatment Using Bacteria and Microalgae"
+  image: 
+  description: 
+  authors:  P. Modi, D. Bhattacharyya
+  link:
+    url: https://raiith.iith.ac.in/3309/
+    display: "Masters thesis, Indian Institute of Technology Hyderabad, 2017."
+    doi: 
   highlight: 1
