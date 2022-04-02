@@ -9,18 +9,7 @@
     doi: 10.21203/rs.3.rs-1058859/v1
   highlight: 1
 
-- ID: 2
-  title: "Correction of river bathymetry parameters using the stage–discharge rating curve"
-  image: 
-  description: 
-  authors: X. Zhou, M. Revel, P. Modi, T. Shiozawa, D. Yamazaki 
-  link:
-    url: https://www.essoar.org/doi/10.1002/essoar.10508468.1
-    display: Water Resources Research (under review) DOI
-    doi: 10.1002/essoar.10508468.1
-  highlight: 1
-
-- ID: 1
+- ID: 3
   title: "Multivariable Integrated Evaluation of Hydrodynamic Modeling: A Comparison of Performance considering different Baseline Topography Data"
   image: 
   description: 
@@ -29,4 +18,15 @@
     url: https://www.essoar.org/doi/10.1002/essoar.10506596.1
     display: Water Resources Research (under review) DOI
     doi: 10.1002/essoar.10506596.1
+  highlight: 1
+
+- ID: 1
+  title: "Correction of river bathymetry parameters using the stage–discharge rating curve"
+  image: 
+  description: 
+  authors: X. Zhou, M. Revel, P. Modi, T. Shiozawa, D. Yamazaki 
+  link:
+    url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR031226
+    display: Water Resources Research DOI
+    doi: 10.1029/2021WR031226
   highlight: 1
