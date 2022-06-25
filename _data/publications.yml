@@ -10,14 +10,14 @@
   highlight: 1
 
 - ID: 2
-  title: "Distribution Matters: Sensitivity of Gridded Data of Population and Economic Conditions to Global Water Scarcity Assessment"
+  title: "Sensitivity of subregional distribution of socioeconomic conditions to the global assessment of water scarcity"
   image: 
   description: 
   authors: P. Modi, N. Hanasaki, D. Yamazaki, J. Boulange, T. Oki
   link:
-    url: https://www.researchsquare.com/article/rs-1058859/v1
-    display: Communications earth & environment (under review) DOI
-    doi: 10.21203/rs.3.rs-1058859/v1
+    url: https://www.nature.com/articles/s43247-022-00475-w
+    display: Communications earth & environment DOI
+    doi: https://doi.org/10.1038/s43247-022-00475-w
   highlight: 1
 
 - ID: 1
