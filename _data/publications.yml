@@ -1,12 +1,15 @@
+
+
 - ID: 3
   title: "Multivariable Integrated Evaluation of Hydrodynamic Modeling: A Comparison of Performance considering different Baseline Topography Data"
   image: 
   description: 
-  authors: Modi P., Revel M. &, Yamazaki D. 
+  bold: Modi P.
+  authors: Modi P., Revel M., & Yamazaki D. 
   link:
-    url: https://www.essoar.org/doi/10.1002/essoar.10506596.1
+    url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR031819
     display: Water Resources Research DOI
-    doi: 10.1002/essoar.10506596.1
+    doi: 10.1029/2021WR031819
   highlight: 1
 
 - ID: 2
@@ -24,7 +27,7 @@
   title: "Correction of river bathymetry parameters using the stage–discharge rating curve"
   image: 
   description: 
-  authors: Zhou X., Revel M., **Modi P.**, Shiozawa T., & Yamazaki D. 
+  authors: Zhou X., Revel M., Modi P., Shiozawa T., & Yamazaki D. 
   link:
     url: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR031226
     display: Water Resources Research DOI
