@@ -23,7 +23,7 @@ permalink: /
 ---
 
 <span style="font-size: 20pt; color:Black"> Education </span>
-1. Ph.D. *(2019 - Present)*, [The University of Tokyo](https://www.u-tokyo.ac.jp/en/), Japan
+1. Ph.D. *(2019 - 2022)*, [The University of Tokyo](https://www.u-tokyo.ac.jp/en/), Japan
 2. M.Tech. *(2015 - 2017)*, [Indian Institute of Technology - Hyderabad](https://iith.ac.in/), India
 3. B.E. *(2011 - 2015)*, [M.S. Ramaiah Institute of Technology](http://msrit.edu/), Bengaluru, India
 
