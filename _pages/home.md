@@ -30,8 +30,8 @@ permalink: /
 ---
 
 <span style="font-size: 20pt; color:Black"> Professional Experience </span>
-1. Assistant Manager *(Oct 2018 - Aug 2019)*, Aarvee Associates Architects Engineers and Consultants Pvt Ltd., Hyderabad, India
-2. Post Graduate Trainee Engineer *(July 2017 - Oct 2018)*, Aarvee Associates Architects Engineers and Consultants Pvt Ltd., Hyderabad, India
+1. Porject Researcher *(Oct 2022 - Present)*, Institute of Industrial Science, The University of Tokyo, Japan
+2. Assistant Manager *(July 2017 - Aug 2019)*, Aarvee Associates Architects Engineers and Consultants Pvt Ltd., Hyderabad, India
 
 
 ---
