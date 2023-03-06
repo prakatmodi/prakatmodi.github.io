@@ -1,3 +1,13 @@
+- ID: 4
+  title: "AltiMaP: Altimetry Mapping Procedure for Hydrography Data"
+  image: 
+  description: 
+  authors: Revel M., Zhou X., Modi P., & Yamazaki D. 
+  link:
+    url: https://essd.copernicus.org/preprints/essd-2022-438/
+    display: Earth System Science Data (Preprint)
+    doi: 10.5194/essd-2022-438
+  highlight: 1
 
 - ID: 3
   title: "Multivariable Integrated Evaluation of Hydrodynamic Modeling: A Comparison of Performance considering different Baseline Topography Data"
