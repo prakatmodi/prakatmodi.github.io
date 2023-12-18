@@ -1,3 +1,27 @@
+- ID: 10
+  title: "Distribution matters: on the sensitivity of gridded data for population and economic condition to global water scarcity assessment"
+  image: 
+  description: 
+  authors: Oki T., Modi P., Hanasaki N., Yamazaki D., & Boulange J. E. S.
+  link:
+    url: https://doi.org/10.57757/IUGG23-1074
+    display: "IUGG 2023, General Assemblies."
+    doi: 10.57757/IUGG23-1074
+  highlight: 1
+
+
+- ID: 9
+  title: "Effect of spatial resolution on the performance of large-scale hydrodynamic models"
+  image: 
+  description: 
+  authors: Modi P., Revel M., Zhou X., & Yamazaki D.
+  link:
+    url: 
+    display: "JpGU Meeting, 2023."
+    doi: 
+  highlight: 1
+
+
 - ID: 8
   title: "Significance of socioeconomic data distribution in global water scarcity assessment"
   image: 
