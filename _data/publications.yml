@@ -1,4 +1,16 @@
 - ID: 5
+  title: "Benchmark Framework for Global River Model (Version 1.0)"
+  image: 
+  description: 
+  authors: Zhou X., Yamazaki D., Revel M., Zhao G., & Modi P.
+  link:
+    url: https://essopenarchive.org/users/533305/articles/741342-benchmark-framework-for-global-river-model-version-1-0
+    display: Journal of Advances in Modelling Earth Systems (Under Review)
+    doi:
+  highlight: 1
+
+
+- ID: 5
   title: "AltiMaP: Altimetry Mapping Procedure for Hydrography Data"
   image: 
   description: 
