@@ -1,3 +1,15 @@
+- ID: 7
+  title: "Climate change and ENSO significantly enhances seasonal flood occurrence in the Ganges-Brahmaputra-Meghna Basin"
+  image: 
+  description: 
+  authors: Uddin S., Yamazaki D., Lintern A., Revel M., & Modi P.
+  link:
+    url: https://essopenarchive.org/doi/full/10.22541/essoar.172469150.03891130/v1
+    display: Under Review
+    doi:
+  highlight: 1
+
+
 - ID: 6
   title: "Benchmark Framework for Global River Model (Version 1.0)"
   image: 
@@ -5,7 +17,7 @@
   authors: Zhou X., Yamazaki D., Revel M., Zhao G., & Modi P.
   link:
     url: https://essopenarchive.org/users/533305/articles/741342-benchmark-framework-for-global-river-model-version-1-0
-    display: Journal of Advances in Modelling Earth Systems (Under Review)
+    display: Under Review
     doi:
   highlight: 1
 
