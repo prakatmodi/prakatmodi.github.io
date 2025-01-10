@@ -1,4 +1,15 @@
-- ID: 12
+- ID: 15
+  title: "Impact of Sub-national Distribution of Population on the Global Assessment of Water Scarcity"
+  image: 
+  description: 
+  authors: Oki T., Yano S., Hanasaki N., Quicho R., Modi P., Yamazaki D., & Boulange J. E.
+  link:
+    url: 
+    display: "AGU Fall Meeting 2024"
+    doi:
+  highlight: 1
+
+- ID: 14
   title: "Importance of Hydrodynamic Model Spatial Resolution: A case study using CaMa-Flood"
   image: 
   description: 
@@ -6,6 +17,30 @@
   link:
     url: 
     display: "GLOBAL ENERGY AND WATER EXCHANGES OPEN SCIENCE CONFERENCE 2024"
+    doi:
+  highlight: 1
+
+
+- ID: 13
+  title: "Impact of Sea Level Rise on Fluvial Flooding on Coastal Mega Cities"
+  image: 
+  description: 
+  authors: Modi P., Hirabayashi Y., Yamazaki D., & Kajiyama K.
+  link:
+    url: 
+    display: "CaMa-Flood developer/user international meeting 2024"
+    doi:
+  highlight: 1
+
+
+- ID: 12
+  title: "Benchmark System of Global River Models"
+  image: 
+  description: 
+  authors: Zhou X., Yamazaki D., Revel M., Zhao G., & Modi P., 
+  link:
+    url: 
+    display: "CaMa-Flood developer/user international meeting 2024"
     doi:
   highlight: 1
 
