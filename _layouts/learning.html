@@ -2,10 +2,38 @@
 layout: default
 ---
 
-<div id="textid" class="col-sm-12">
-    {{ content }}
+<div class="row">
+  {% for publi in site.data.learning_list %}
+    <div class="col-sm-6 clearfix">
+      <div class="well" style="min-height: 250px; max-height: 250px; overflow-y: auto; text-align: center;">
+        
+        {% if publi.link %}
+          <h3><a href="{{ publi.link }}">{{ publi.title }}</a></h3>
+        {% else %}
+          <h3>{{ publi.title }}</h3>
+        {% endif %}
 
-    {% include searchbox.html %}
+        <div style="display: flex; align-items: center; min-height: 150px; max-height: 200px;">
+          
+          {% if publi.image %}
+            <img src="{{ site.url }}{{ site.baseurl }}{{ publi.image }}" 
+                 class="img-responsive" 
+                 width="25%" 
+                 style="margin-right: 10px;" 
+                 alt="{{ publi.title | default: '' }}">
+          {% endif %}
+          
+          <p style="flex-grow: 1; text-align: justify; font-size: 16px;">{{ publi.description }}</p>
+
+        </div>
+
+        {% if publi.news2 %}
+          <p>{{ publi.news2 }}</p>
+        {% endif %}
+
+      </div>
+    </div>
+  {% endfor %}
 </div>
-  
 
+{% include searchbox.html %}

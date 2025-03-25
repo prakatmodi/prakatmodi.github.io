@@ -8,4 +8,3 @@ permalink: /learning/
 
 
 
-### Under Construction
