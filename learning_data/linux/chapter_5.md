@@ -122,7 +122,8 @@ do
 
     var=$(echo ${FILE} | cut -c 1-5)    # take out 1st to 5th characters
 
-    cdo -f nc chname,RUNOFF,Runoff -shifttime,80year -mulc,86400 -remapbil,"/dir_1/resample/grid_30min.txt" -chunit,"kg/m**2/s","mm day-1" -vertsum $FILE temp1.nc
+    cdo -f nc chname,RUNOFF,Runoff -shifttime,80year -mulc,86400 -remapbil,"/dir_1/resample/grid_30min.txt" 
+    -chunit,"kg/m**2/s","mm day-1" -vertsum $FILE temp1.nc
 
     cdo -f nc4 -z zip splityear temp1.nc CM_${var}_global30_day_Runoff_         # final processed data
 
