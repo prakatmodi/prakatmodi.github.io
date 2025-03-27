@@ -60,18 +60,46 @@ Linux systems are open-source Unix-like operating systems used for many devices 
 `tar -xvf file_name.tar`: extraction
 
 
-| option | full name       | mean                          |
-| ------ | --------------- | ----------------------------- |
-| -z     | --gzip          | Specifies gzip format         |
-| -c     | --create        | Create a new compressed file  |
-| -v     | --verbose       | Output processing results     |
-| -f     | --file          | Compressed file name          |
-| -x     | --extract       | Extracting files from compressed file |
+<table style="border-collapse: collapse; width: 40% 50% 40%; border: 1px solid gray;">
+  <tr>
+    <th style="border: 1px solid gray; padding: 4px;">Option</th>
+    <th style="border: 1px solid gray; padding: 4px;">Full Name</th>
+    <th style="border: 1px solid gray; padding: 4px;">Meaning</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid gray; padding: 4px;">-z</td>
+    <td style="border: 1px solid gray; padding: 4px;">--gzip</td>
+    <td style="border: 1px solid gray; padding: 4px;">Specifies gzip format</td>
+  </tr>
+    <tr>
+    <td style="border: 1px solid gray; padding: 4px;">-c</td>
+    <td style="border: 1px solid gray; padding: 4px;">--create</td>
+    <td style="border: 1px solid gray; padding: 4px;">Create a new compressed file</td>
+  </tr>
+    <tr>
+    <td style="border: 1px solid gray; padding: 4px;">-v</td>
+    <td style="border: 1px solid gray; padding: 4px;">--verbose</td>
+    <td style="border: 1px solid gray; padding: 4px;">Output processing results</td>
+  </tr>
+    <tr>
+    <td style="border: 1px solid gray; padding: 4px;">-f</td>
+    <td style="border: 1px solid gray; padding: 4px;">--file</td>
+    <td style="border: 1px solid gray; padding: 4px;">Compressed file name</td>
+  </tr>
+    <tr>
+    <td style="border: 1px solid gray; padding: 4px;">-x</td>
+    <td style="border: 1px solid gray; padding: 4px;">--extract</td>
+    <td style="border: 1px solid gray; padding: 4px;">Extracting files from compressed file</td>
+  </tr>
+</table>
 
 
 ### *References*
 - Top (GNU Coreutils 9.6). (n.d.). Retrieved March 20, 2025, from [https://www.gnu.org/software/coreutils/manual/html_node/](https://www.gnu.org/software/coreutils/manual/html_node/)
 - Linux tar.gz tar 圧縮 解凍 #Linux - Qiita. (n.d.). Retrieved March 21, 2025, from [https://qiita.com/HyunwookPark/items/047ba2da9ef16bcac356](https://qiita.com/HyunwookPark/items/047ba2da9ef16bcac356)
+
+
+
 
 
 </div>
