@@ -1,3 +1,15 @@
+- ID: 10
+  title: "A new generation of global flood protection database"
+  image: 
+  description: 
+  authors: Boulange J., Hirabayashi Y., Rimba A.B., & Modi P.
+  link:
+    url: 
+    display: International Journal of Disaster Risk Reduction (Under Review)
+    doi: 
+  highlight: 1
+
+
 - ID: 9
   title: "How Spatial Resolutions Impact the Large-scale River Hydrodynamic Model Simulations: Analysis Focuses on Model Physics"
   image: 
@@ -5,7 +17,7 @@
   authors: Modi P., Yamazaki D., Hirabayashi Y., Revel M., & Zhou X.
   link:
     url: https://essopenarchive.org/doi/full/10.22541/essoar.173757579.94050169/v1
-    display: Under Review
+    display: JAMES (Under Review)
     doi: 10.22541/essoar.173757579.94050169/v1
   highlight: 1
 
@@ -15,9 +27,9 @@
   description: 
   authors: Uddin S., Yamazaki D., Lintern A., Revel M., & Modi P.
   link:
-    url: https://www.sciencedirect.com/science/article/pii/S0022169425005451
+    url: https://doi.org/10.1016/j.jhydrol.2025.133207
     display: Journal of Hydrology
-    doi: https://doi.org/10.1016/j.jhydrol.2025.133207
+    doi: 10.1016/j.jhydrol.2025.133207
   highlight: 1
 
 - ID: 7
