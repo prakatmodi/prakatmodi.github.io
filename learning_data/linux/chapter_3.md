@@ -1,5 +1,5 @@
 ---
-# title: "linux"
+title: "Linux, HPC, PBS, CDO"
 layout: learning_data
 # excerpt: "linux"
 # sitemap: false

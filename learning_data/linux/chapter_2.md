@@ -1,5 +1,5 @@
 ---
-# title: "linux"
+title: "linux"
 layout: learning_data
 # excerpt: "linux"
 # sitemap: false
