@@ -18,7 +18,7 @@ High-Performance Computing (HPC) systems consist of interconnected nodes forming
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/learning/linux/example_server.png" alt="server example" style="width: 900px; float: none; margin-left: 20px; margin-right: 20px; margin-bottom: 10px" /> <br>
 
-*[Note: Please click here for details related to H-Lab Server](./hlab_server.md)*
+*[Note: Please click here for details related to H-Lab Server](/images/learning/linux/hlab_server.png)*
 
 #### Key components include:
 
