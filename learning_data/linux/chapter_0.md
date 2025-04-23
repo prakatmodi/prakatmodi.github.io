@@ -43,14 +43,18 @@ This is Table of content for the Linux leanring for the beginners
   - [5.3. Some common CDO commands](/learning/linux/chapter_5.md#some-common-cdo-commands)
   - [5.4. Scripting with CDO](/learning/linux/chapter_5.md#scripting-with-cdo)
   - [*References*](/learning/linux/chapter_5.md#references)
-- [6. Practical Exercises & Projects](/learning/linux/chapter_6.md)
+- [6. Other useful linux tools](/learning/linux/chapter_6.md)
+  - [6.1. rclone](/learning/linux/chapter_6.md#rclone)
+  - [6.2. xclip](/learning/linux/chapter_6.md#xclip)
+  - [6.2. GNU parallel](/learning/linux/chapter_6.md#gnu-parallel)
+- [7. Practical Exercises & Projects](/learning/linux/chapter_7.md)
 
   <!-- - [6.1. Linux Basics Practice](/learning/linux/chapter_6.md#linux-basics-practice)
   - [6.2. Submitting and Managing Jobs on HPC with PBS](/learning/linux/chapter_6.md#submitting-and-managing-jobs-on-hpc-with-pbs)
   - [6.3. Working with CDO for Climate Data Analysis](/learning/linux/chapter_6.md#working-with-cdo-for-climate-data-analysis) -->
   
-- [7. References & Resources](/learning/linux/chapter_7.md)
-  - [7.1. Official Documentation Links](/learning/linux/chapter_7.md#official-documentation-links)
-  - [7.2. Recommended Tutorials & Books](/learning/linux/chapter_7.md#recommended-tutorials-books)
+- [8. References & Resources](/learning/linux/chapter_8.md)
+  - [8.1. Official Documentation Links](/learning/linux/chapter_8.md#official-documentation-links)
+  - [8.2. Recommended Tutorials & Books](/learning/linux/chapter_8.md#recommended-tutorials-books)
 
 
