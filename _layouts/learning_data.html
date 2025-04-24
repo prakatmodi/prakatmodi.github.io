@@ -13,6 +13,53 @@
       </div>
     </div>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Square Buttons</title>
+      <style>
+        .btn-square {
+          border-radius: 20; /* Remove rounded corners */
+          padding: 10px; /* Adjust padding for a square look */
+          border: 1px solid black; /* Add a border for a simple style */
+          background-color: white; /* White background */
+          color: black; /* Black text */
+          width: 100px; /* Set a fixed width for the buttons */
+          text-align: center; /* Center the text */
+          margin-top: 20px; /* Add margin to create space between buttons */
+          margin-bottom: 20px; /* Add margin to create space between buttons */
+          margin-right: 20px; /* Add margin to create space between buttons */
+        }
+        .btn-square:hover {
+          outline: 4px solid rgba(6, 189, 134, 0.993);
+          outline-offset: 0; /* To prevent it from appearing too far outside */
+          background-color: white; /* Keep the background change */
+          color: black; /* Keep the text color change */
+          border-radius: 20; /* Keep the border-radius */
+          padding: 10px; /* Keep the padding */
+          border: 1px solid black; /* Keep the original border */
+          width: 100px; /* Keep the fixed width for the buttons */
+          text-align: center; /* Center the text */
+          margin-top: 20px; /* Add margin to create space between buttons */
+          margin-bottom: 20px; /* Keep the margin between buttons on hover */
+          margin-right: 20px; /* Add margin to create space between buttons */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <a href="{{ page.previous_chapter }}" class="btn btn-square mb-10">Previous</a>
+            <a href="{{ page.next_chapter }}" class="btn btn-square mb-10">Next</a>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+
     {% include footer.html %}
 
   </body>

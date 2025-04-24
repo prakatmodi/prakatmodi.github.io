@@ -1,14 +1,14 @@
 ---
-title: "Linux, HPC, PBS, CDO"
 layout: learning_data
-# excerpt: "linux"
-# sitemap: false
+title: Chapter 8
 permalink: /learning/linux/chapter_8.md/
+previous_chapter: /learning/linux/chapter_7.md/
+next_chapter: /learning/
 ---
 
 
 
-<h1 style="text-align:center;"> 7. References & Resources </h1>
+<h1 style="text-align:center;"> 8. References & Resources </h1>
 
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: "Linux, HPC, PBS, CDO"
 layout: learning_data
-# excerpt: "linux"
-# sitemap: false
+title: Chapter 7
 permalink: /learning/linux/chapter_7.md/
+previous_chapter: /learning/linux/chapter_6.md/
+next_chapter: /learning/linux/chapter_8.md/
 ---
 
-<h1 style="text-align:center;"> 6. Practical Exercises & Projects </h1>
+<h1 style="text-align:center;"> 7. Practical Exercises & Projects </h1>
 ---
 
 ### Under Construction  ...

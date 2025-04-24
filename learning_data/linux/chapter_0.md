@@ -1,9 +1,9 @@
 ---
-title: "Linux, HPC, PBS, CDO"
 layout: learning_data
-# excerpt: "linux"
-# sitemap: false
+title: Chapter 0
 permalink: /learning/linux/chapter_0.md/
+previous_chapter: /learning/
+next_chapter: /learning/linux/chapter_1.md/
 ---
 
 <!-- 

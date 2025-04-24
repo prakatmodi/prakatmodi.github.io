@@ -1,9 +1,9 @@
 ---
-title: "Linux, HPC, PBS, CDO"
 layout: learning_data
-# excerpt: "linux"
-# sitemap: false
+title: Chapter 4
 permalink: /learning/linux/chapter_4.md/
+previous_chapter: /learning/linux/chapter_3.md/
+next_chapter: /learning/linux/chapter_5.md/
 ---
 
 <h1 style="text-align:center;"> 4. Portable Batch System (PBS) </h1>
