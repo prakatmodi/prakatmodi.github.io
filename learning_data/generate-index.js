@@ -47,10 +47,16 @@
 
 
 
+
+
+
+
+'use strict'; // Add strict mode declaration
+
 const fs = require('fs');
 const path = require('path');
 
-const markdownFolderPath = './.'; // Adjust path as needed
+const markdownFolderPath = './.';
 console.log(markdownFolderPath);
 const outputFilePath = './search-index.json';
 const markdownExtension = '.md';
@@ -64,15 +70,15 @@ function removeFrontmatter(content) {
 
 // Function to remove Markdown comments
 function removeComments(content) {
-  const commentRegex = //g;
+  const commentRegex = /\/\/.*|\/\*[\s\S]*?\*\//g;
   return content.replace(commentRegex, '');
 }
 
 function processFile(filePath) {
   try {
     let fileContent = fs.readFileSync(filePath, 'utf8');
-    fileContent = removeFrontmatter(fileContent); // Remove frontmatter
-    fileContent = removeComments(fileContent);    // Remove comments
+    fileContent = removeFrontmatter(fileContent);
+    fileContent = removeComments(fileContent);
 
     indexData.push({
       name: path.basename(filePath),
@@ -93,7 +99,7 @@ function traverseDirectory(directoryPath) {
       const stats = fs.statSync(fullPath);
 
       if (stats.isDirectory()) {
-        traverseDirectory(fullPath); // Recursively traverse subdirectories
+        traverseDirectory(fullPath);
       } else if (path.extname(file) === markdownExtension) {
         processFile(fullPath);
       }
