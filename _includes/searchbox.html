@@ -60,7 +60,7 @@
     <script>
         let markdownFiles = {};
 
-        fetch('search-index.json')
+        fetch('/learning_data/search-index.json')
             .then(response => response.json())
             .then(data => {
                 markdownFiles = {};
