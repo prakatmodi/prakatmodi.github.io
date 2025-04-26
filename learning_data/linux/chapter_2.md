@@ -1,9 +1,9 @@
 ---
 layout: learning_data
 title: Chapter 2
-permalink: /learning/linux/chapter_2.md/
-previous_chapter: /learning/linux/chapter_1.md/
-next_chapter: /learning/linux/chapter_3.md/
+permalink: /learning/linux/chapter_2/
+previous_chapter: /learning/linux/chapter_1/
+next_chapter: /learning/linux/chapter_3/
 ---
 
 

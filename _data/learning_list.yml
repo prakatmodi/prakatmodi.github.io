@@ -1,22 +1,22 @@
 - title: "Guidebook for Linux Server, HPC, PBS System, and CDO"
   description: "Learn the basics of linux server, high performance computing (HPC), poratble batch system (PBS), and climate data operators (CDO)."
-  link: "/learning/linux/chapter_0.md"
+  link: "/learning/linux/chapter_0"
   image: "/images/learning/linux.png" 
 
 
 - title: "Julia for Hydrology"
   description: "Learn the basics of Julia programming language for hydrology."
-  link: "/learning_data/julia/chapter_0.md"
+  link: "/learning_data/julia/chapter_0"
   image: "/images/learning/julia.png"
 
   
 - title: "Hydrology and Hydrodynamics"
   description: "An introduction to hydrology and hydrodynamics."
-  link: "/learning_data/hydrology/chapter_0.md"
+  link: "/learning_data/hydrology/chapter_0"
   image:
 
 
 - title: "CaMa-Flood Model"
   description: "Learn catchment-based marcoscale floodplain (CaMa-Flood) model for flood simulation."
-  link: "/learning_data/cama_flood/chapter_0.md"
+  link: "/learning_data/cama_flood/chapter_0"
   image: "/images/learning/cama_flood.png"

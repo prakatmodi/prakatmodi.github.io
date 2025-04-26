@@ -1,9 +1,9 @@
 ---
 layout: learning_data
 title: Chapter 6
-permalink: /learning/linux/chapter_6.md/
-previous_chapter: /learning/linux/chapter_5.md/
-next_chapter: /learning/linux/chapter_7.md/
+permalink: /learning/linux/chapter_6/
+previous_chapter: /learning/linux/chapter_5/
+next_chapter: /learning/linux/chapter_7/
 ---
 
 <h1 style="text-align:center;"> 6. Other useful linux tools </h1>

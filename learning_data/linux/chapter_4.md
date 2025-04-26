@@ -1,9 +1,9 @@
 ---
 layout: learning_data
 title: Chapter 4
-permalink: /learning/linux/chapter_4.md/
-previous_chapter: /learning/linux/chapter_3.md/
-next_chapter: /learning/linux/chapter_5.md/
+permalink: /learning/linux/chapter_4/
+previous_chapter: /learning/linux/chapter_3/
+next_chapter: /learning/linux/chapter_5/
 ---
 
 <h1 style="text-align:center;"> 4. Portable Batch System (PBS) </h1>
