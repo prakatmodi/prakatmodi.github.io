@@ -45,6 +45,14 @@ exclude:
 sass:
   sass_dir: _sass
 
+# plugins for various features
+plugins:
+  - jekyll-sitemap
+
+sitemap:
+  changefreq: weekly
+
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
