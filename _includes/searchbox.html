@@ -1,110 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Markdown Search</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <style>
-        /* body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        } */
-        input {
-            width: 300px;
-            padding: 5px;
-            font-size: 14px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: #cfcdcd;
-            color: #0f0f0f;
-            border: none;
-            border-radius: 8px;
+<script src="/js/search.min.js"></script>
+<script>
+{% assign counter = 0 %}
+var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endfor %}{% for page in site.posts %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('searchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('searchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('searchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#searchresults ul')[0].innerHTML = document.querySelectorAll('#searchresults ul')[0].innerHTML + "<li class='searchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#searchresults ul')[0].innerHTML = "<li class='searchresult'>No results found...</li>";
         }
-        #results {
-            margin-top: 10px;
-        }
-        .result-item {
-            margin-bottom: 10px;
-            padding: 8px;
-            background-color: #555555;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #bb86fc;
-            font-size: 1.1em;
-        }
-        p {
-            color: #b0b0b0;
-        }
-        a {
-            text-decoration: none;
-            color: #bb86fc;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+    }
+    return false;
+}
+</script>
+<style>
+  form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  input {
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #cfcdcd;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 8px;
+  }
+  #lunrsearch {
+    /* Background color of the input field */
+    background-color: #f0f0f0; /* Light gray */
+    /* Text color */
+    color: #333; /* Dark gray */
+    /* Border properties */
+    border: 1px solid #ccc; /* Gray border, 1 pixel thick */
+    /* Rounded corners */
+    border-radius: 5px; /* Adjust the value to control the roundness */
+    /* Padding (space between text and border) */
+    padding: 8px 12px;
+    /* Width of the input field */
+    width: 300px; /* Adjust as needed */
+    /* Font size */
+    font-size: 16px;
+  }
 
-    <!-- Your existing content goes here -->
+  #lunrsearch:focus {
+    /* Style when the input field is focused (clicked on) */
+    background-color: #fff; /* White background */
+    border-color: #0078d7; /* Blue border */
+    outline: none; /* Remove the default outline in some browsers */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);  /* Add a subtle shadow */
+  }
 
-    <div style="text-align: center;">
-        <input type="text" id="search-box" placeholder="Type here to search from learning marterials ..." />
-    </div>
-    <div id="results"></div>
+  /* styling for the results */
+  #searchresults {
+    padding-top: 0.2rem;
+  }
+  .searchresult {
+    padding-bottom: 1rem;
+  }
+  .searchresult .title {
+    color: #d9230f;
+  }
+  .searchresult .url {
+    color: silver;
+  }
+  .searchresult a {
+    display: block;
+    color: #777;
+  }
+  .searchresult a:hover,
+  .searchresult a:focus {
+    text-decoration: none;
+  }
+  .searchresult a:hover .title {
+    text-decoration: underline;
+  }
+  form {
+  text-align: center;
+  }
+</style>
 
-    <script>
-        let markdownFiles = {};
-
-        fetch('/learning_data/search-index.json')
-            .then(response => response.json())
-            .then(data => {
-                markdownFiles = {};
-                data.forEach(file => {
-                    markdownFiles[file.name] = { content: file.content, path: file.path };
-                });
-                initializeSearch();
-            });
-
-        function initializeSearch() {
-            const idx = lunr(function () {
-                this.ref('title');
-                this.field('content');
-
-                Object.keys(markdownFiles).forEach(title => {
-                    this.add({
-                        title: title,
-                        content: markdownFiles[title].content
-                    });
-                });
-            });
-
-            document.getElementById('search-box').addEventListener('input', function (e) {
-                const query = e.target.value;
-                const results = idx.search(query);
-                const resultsDiv = document.getElementById('results');
-                resultsDiv.innerHTML = '';
-
-                if (results.length === 0) {
-                    resultsDiv.innerHTML = '<p>No results found.</p>';
-                } else {
-                    results.forEach(result => {
-                        const fileData = markdownFiles[result.ref];
-                        resultsDiv.innerHTML += `
-                            <div class="result-item">
-                                <h2><a href="${fileData.path}" target="_blank">${result.ref}</a></h2>
-                                <p>${fileData.content.substring(0, 150)}...</p>
-                            </div>
-                        `;
-                    });
-                }
-            });
-        }
-    </script>
-
-</body>
-</html>
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type here to search  from website" /></p>
+</form>
+<div id="searchresults">
+    <ul></ul>
+</div>

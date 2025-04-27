@@ -49,10 +49,10 @@ sass:
 # plugins for various features
 plugins:
   - jekyll-sitemap
+  - jekyll-lunr-js-search
 
 sitemap:
   changefreq: weekly
-
 
 # Conversion
 markdown: kramdown
@@ -60,6 +60,32 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
+
+exclude_from_search: true
+
+lunr_search:
+  excludes: [
+    "rss.xml",
+    "atom.xml",
+    "sitemap.xml",
+    "search.html",
+    "search.json",
+    "robots.txt",
+    "_data",
+    "_includes",
+    "_layouts",
+    "_posts",  # Exclude all posts
+    "_sass",
+    "main.css",
+    "/css/main.css",
+    "js",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock",
+    "_site",
+    "assets/img/", # Exclude a specific folder
+  ]
 
 
 # Markdown Processing
