@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Markdown Search</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #ffffff;
+      color: #333;
+    }
+    input {
+      width: 400px;
+      padding: 8px;
+      font-size: 14px;
+      margin: 20px 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    input:focus {
+      border-color: rgb(0, 255, 191); /* Change this to your desired color */
+      outline: none; /* Optional: removes the default outline */
+      box-shadow: 0 0 5px rgba(0, 255, 191, 0.5); /* Optional: adds a shadow effect */
+      transition: border-color 0.3s, box-shadow 0.3s; /* Optional: smooth transition */
+    }
+    #results {
+      margin-top: 10px;
+    }
+    .result-item {
+      margin-bottom: 20px;
+      list-style: disc;
+      margin-left: 20px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.4s forwards;
+    }
+    .result-item .result-title a {
+      font-size: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #d9534f; /* red */
+      display: block; /* Ensure it takes up the full width of its container */
+      text-align: left; /* Explicitly align text to the left */
+    }
+    .result-item .result-title a:hover {
+      text-decoration: underline;
+      color: #d9534f; /* Ensure the hover color is also red */
+    }
+    .result-snippet {
+      margin-top: 5px;
+      font-size: 10px;
+      color: #666;
+    }
+    .result-link {
+      margin-top: 2px;
+      font-size: 10px; /* Make the link size the same */
+      color: #999;
+      word-break: break-word;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div style="text-align: center;">
+    <input type="text" id="search-box" placeholder="Type here to search from learning materials..." />
+  </div>
+  <ul id="results"></ul>
+
+  <script>
+    let markdownFiles = {};
+
+    fetch('/learning_data/search-index.json')
+      .then(response => response.json())
+      .then(data => {
+        markdownFiles = {};
+        data.forEach(file => {
+          markdownFiles[file.name] = {
+            title: file.title,
+            summary: file.summary,
+            content: file.content,
+            path: file.path
+          };
+        });
+        initializeSearch();
+      });
+
+    function initializeSearch() {
+      const idx = lunr(function () {
+        this.ref('name');
+        this.field('title');
+        this.field('content');
+
+        Object.keys(markdownFiles).forEach(name => {
+          this.add({
+            name: name,
+            title: markdownFiles[name].title,
+            content: markdownFiles[name].content
+          });
+        });
+      });
+
+      document.getElementById('search-box').addEventListener('input', function (e) {
+        const query = e.target.value;
+        const results = idx.search(query);
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '';
+
+        if (results.length === 0) {
+          resultsDiv.innerHTML = '<p>No results found.</p>';
+        } else {
+          results.forEach((result, index) => {
+            const fileData = markdownFiles[result.ref];
+            const snippet = fileData.summary || fileData.content.substring(0, 200).replace(/\n/g, ' ') + '...';
+            const delay = index * 0.05; // small delay between items
+            resultsDiv.innerHTML += `
+              <li class="result-item" style="animation-delay: ${delay}s;">
+                <div class="result-title">
+                  <a href="${fileData.path}" target="_blank">${fileData.title}</a>
+                </div>
+                <div class="result-snippet">${snippet}</div>
+                <div class="result-link">${fileData.path}</div>
+              </li>
+            `;
+          });
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

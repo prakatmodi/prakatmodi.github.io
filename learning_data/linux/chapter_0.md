@@ -13,7 +13,7 @@ This is Table of content for the Linux leanring for the beginners
 -->
 
 
-<h2 style="text-align:center;" > Guidebook for Linux Server, HPC, PBS System, and CDO </h2>
+<h1 style="text-align:center;" > Guidebook for Linux Server, HPC, PBS System, and CDO </h1>
 
 ---
 ### Table of Contents

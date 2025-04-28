@@ -126,3 +126,33 @@ text-transform: uppercase;
 .small-caps {
 text-transform: capitalize;
 }
+
+
+/* Ensure specific styling for search result titles */
+// .result-item .result-title a {
+// color: #d9534f !important; /* Red color for title */
+// font-size: 10px; /* Adjust the font size as needed */
+// font-weight: bold;
+// text-decoration: none !important;
+// }
+  
+// .result-item .result-title a:hover {
+// text-decoration: underline !important; /* Ensure the hover effect */
+// color: #d9534f !important; /* Keep the red color on hover */
+// }
+  
+.result-item {
+	.result-title {
+	  a {
+		font-size: 10px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #d9534f; /* red */
+  
+		&:hover {
+		  text-decoration: underline;
+		  color: #d9534f; /* Ensure the hover color is also red */
+		}
+	  }
+	}
+  }

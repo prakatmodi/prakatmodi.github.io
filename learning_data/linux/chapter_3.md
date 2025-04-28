@@ -26,7 +26,7 @@ High-Performance Computing (HPC) systems consist of interconnected nodes forming
 - Calculation node: The calculation node have large memory with multi-core processors or GPUs, used to perfom all the analysis. It can be used directly or with PBS command for submitting the job to the calculation node for performing analysis in the background. 
 - Storage Systems: Hierarchical storage includes high-speed scratch space and permanent home directories.
 - Networking: High-speed interconnects (e.g., InfiniBand) enabling fast data transfer between nodes.
-- Scheduler/Resource Manager: Software (e.g., [PBS](/learning/linux/chapter_4.md/), SLURM) managing job submissions and resource allocation.
+- Scheduler/Resource Manager: Software (e.g., [PBS](/learning/linux/chapter_4/), SLURM) managing job submissions and resource allocation.
 
 ### 3.2. Connecting to HPC clusters
 

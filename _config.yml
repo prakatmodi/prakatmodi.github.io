@@ -49,7 +49,7 @@ sass:
 # plugins for various features
 plugins:
   - jekyll-sitemap
-  - jekyll-lunr-js-search
+  # - jekyll-lunr-js-search
 
 sitemap:
   changefreq: weekly
