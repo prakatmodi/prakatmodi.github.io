@@ -30,7 +30,7 @@ permalink: /
 ---
 
 <span style="font-size: 20pt; color:Black"> Professional Experience </span>
-1. Project Research Assistant Professor *(Apr 2023 - Present)*, Shibaura Institute of Technology, Japan
+1. Research Assistant Professor *(Apr 2023 - Present)*, Shibaura Institute of Technology, Japan
 2. Associate Research Fellow *(Apr 2023 - Present)*, Institute of Industrial Science, The University of Tokyo, Japan
 3. Project Researcher *(Oct 2022 - Mar 2023)*, Institute of Industrial Science, The University of Tokyo, Japan
 4. Assistant Manager *(July 2017 - Aug 2019)*, Aarvee Associates Architects Engineers and Consultants Pvt Ltd., Hyderabad, India
