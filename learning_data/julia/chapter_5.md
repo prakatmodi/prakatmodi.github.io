@@ -14,6 +14,8 @@ next_chapter: /learning/julia/chapter_6/
 
 Under Construction ...
 
+
+
 <div style="text-align: justify;">
 
 
