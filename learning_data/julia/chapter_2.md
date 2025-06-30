@@ -23,7 +23,7 @@ In Julia, arrays are one of the most commonly used data structures. Julia uses 1
 
 This is particularly relevant when working with geospatial raster or multidimensional scientific datasets, as the order of reading and writing data (e.g., row vs column-wise) can affect both performance and accuracy ([see Chapter 3 for details](/learning/julia/chapter_3/)).
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/learning/julia/row_col_major_2d.png" alt="Indexing" style="width: 800px; float: none; margin-left: 20px; margin-right: 20px; margin-bottom: 10px" /> <br>
+<img src="{{ site.url }}{{ site.baseurl }}/images/learning/julia/row_col_major_2d.png" alt="Indexing" style="width: 500px; display: block; margin: auto; margin-bottom: 10px" /> <br>
 
 
 Understanding indexing helps when:
