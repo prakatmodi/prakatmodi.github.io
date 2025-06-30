@@ -6,17 +6,17 @@
 
 - title: "Julia for Hydrology"
   description: "Learn the basics of Julia programming language for hydrology."
-  link: "/learning_data/julia/chapter_0"
+  link: "/learning/julia/chapter_0"
   image: "/images/learning/julia.png"
 
   
 - title: "Hydrology and Hydrodynamics"
   description: "An introduction to hydrology and hydrodynamics."
-  link: "/learning_data/hydrology/chapter_0"
+  link: "/learning/hydrology/chapter_0"
   image:
 
 
 - title: "CaMa-Flood Model"
   description: "Learn catchment-based marcoscale floodplain (CaMa-Flood) model for flood simulation."
-  link: "/learning_data/cama_flood/chapter_0"
+  link: "/learning/cama_flood/chapter_0"
   image: "/images/learning/cama_flood.png"
