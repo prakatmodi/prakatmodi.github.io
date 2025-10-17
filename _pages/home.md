@@ -14,7 +14,7 @@ permalink: /
 <img src="{{ site.url }}{{ site.baseurl }}/images/prakat.jpg" alt="profile" style="width: 800px; display: block; margin: 0 auto; margin-bottom: 20px;" />
 
 <p style="text-align: justify">
-    I am a Project Research Assistant Professor associated with the <a href="http://www.db.shibaura-it.ac.jp/~hirabayashi/">Hirabayashi Lab</a> at <a href="https://www.shibaura-it.ac.jp/"> Shibaura Institute of Technology, Japan</a>. My research aims to understand and model global hydrology and large-scale river hydrodynamics to improve the representation of these systems for better prediction. My research will help to quantify the impact of anthropogenic activities and climate change on the natural system and will help build a sustainable society.<br />
+    I am a Research Assistant Professor associated with the <a href="http://www.db.shibaura-it.ac.jp/~hirabayashi/">Hirabayashi Lab</a> at <a href="https://www.shibaura-it.ac.jp/"> Shibaura Institute of Technology, Japan</a>. My research aims to understand and model global hydrology and large-scale river hydrodynamics to improve the representation of these systems for better prediction. My research will help to quantify the impact of anthropogenic activities and climate change on the natural system and will help build a sustainable society.<br />
 </p>
 ---
 
