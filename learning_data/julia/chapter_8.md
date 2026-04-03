@@ -2,7 +2,7 @@
 layout: learning_data
 title: Chapter 8
 permalink: /learning/julia/chapter_8/
-previous_chapter: /learning/chpater_7
+previous_chapter: /learning/chpater_7/
 next_chapter: /learning/
 ---
 
